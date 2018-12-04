@@ -1,0 +1,16 @@
+@{
+  Layout = "_Layout";
+}
+
+<div class="container">
+@foreach (var city in Model)
+{
+ <ul>
+ <li>Country code: @city.GetCountryCode()</li>
+ <li>District: @city.GetDistrict()</li>
+ <li>ID: @city.GetID()</li>
+ <li>City: @city.GetName()</li>
+ <li>Population: @city.GetPopulation()</li>
+ </ul>
+ }
+</div>
